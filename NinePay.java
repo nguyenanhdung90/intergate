@@ -38,8 +38,8 @@ public class NinePay {
 		Map<String, String> queryBuild = new HashMap<String, String>();
 		queryBuild.put("baseEncode", baseEncode);
 		queryBuild.put("signature", signature);
+		// This is direct link for 9Pay Gateway
 		String redirectUrl = END_POINT + "/portal?" + http_build_query(queryBuild);
-	
 		System.out.println(redirectUrl);
 	}
 
